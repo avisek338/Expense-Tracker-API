@@ -16,7 +16,7 @@ app.use(express.json())
 
 //routes
 app.get('/', (req, res) => {
-   res.send("EXPRENSE TRACKER API")
+   res.send("EXPENSE TRACKER API")
 })
 app.use('/api/v1/auth', authRouter)
 app.use('/api/v1/expense', authMiddleware, expenseRouter)
